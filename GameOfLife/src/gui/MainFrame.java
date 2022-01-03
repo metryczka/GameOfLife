@@ -10,9 +10,6 @@ public class MainFrame extends JFrame{
 	
 	private GamePanel gamePanel = new GamePanel();
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	
 	public MainFrame() {

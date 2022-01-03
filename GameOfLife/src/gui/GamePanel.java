@@ -4,7 +4,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.MouseEvent;
-
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 import java.awt.event.MouseAdapter;
 
 
@@ -45,7 +46,7 @@ public class GamePanel extends JPanel {
 				 repaint();
 			}	
 		});
-		
+		Executors.newScheduledThreadPool(1).scheduleAtFixedRate(()->next(), 500, 500, TimeUnit.MILLISECONDS);
 	}
 	
 	@Override
